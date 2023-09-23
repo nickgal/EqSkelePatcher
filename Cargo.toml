@@ -1,0 +1,11 @@
+[package]
+name = "eq_skele_patcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4.4", features = ["derive"] }
+libeq_wld = { git = "https://github.com/cjab/libeq", branch = "master", features = ["serde"] }
+libeq = { git = "https://github.com/cjab/libeq", branch = "master" }
+serde_json = { version = "1.0.107", features = ["std"] }
+zu_common = { git = "https://github.com/KimLS/zone-utilities-rs", version = "0.1.0" }
